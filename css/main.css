@@ -37,7 +37,7 @@ nav a {
   text-decoration: none;
   padding: .5em .75em;
   white-space: nowrap;
-  color: #6c8fe0
+  color: #6c8fe0;
 }
 
 nav a:hover {
@@ -55,4 +55,99 @@ ul {
   padding-left: 0;
   flex-direction: column;
   list-style-type: none;
+}
+
+li {
+  background-color: #18294f;
+  border: 2px solid #18294f;
+  padding-bottom: 1rem;
+}
+
+@media only screen and (min-width: 25em) {
+
+  li {
+    width: 50%;
+    text-align: center;
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  nav a {
+    text-align: center;
+  }
+
+}
+
+@media only screen and (min-width: 38em) {
+
+  html {
+    font-size: 110%;
+    line-height: 1.4;
+  }
+
+  li {
+    text-align: center;
+  }
+
+  ul {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  html {
+    font-size: 120%;
+    line-height: 1.5;
+  }
+
+  header {
+    display: flex;
+  }
+
+  h1, p {
+    margin: 0 0 1.5rem;
+  }
+
+  nav li {
+    width: 25%;
+    float: right;
+  }
+
+  header h1 {
+    text-align: left;
+    margin-left: .9rem;
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  html {
+    font-size: 130%;
+  }
+
+  header {
+    display: flex;
+  }
+
+  header h1 {
+    text-align: left;
+  }
+
+  nav ul {
+    text-align: right;
+  }
+
+  nav a {
+    text-align: right;
+  }
+
 }
