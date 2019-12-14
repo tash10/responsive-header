@@ -138,7 +138,7 @@ li {
     display: flex;
   }
 
-  header h {
+  header h1 {
     text-align: left;
   }
 
@@ -149,3 +149,5 @@ li {
   nav a {
     text-align: right;
   }
+
+}
